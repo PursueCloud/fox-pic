@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <name>fox-pic</name>
-    <description>a tool used to generate words including English and Chinese words to picture</description>
+    <description>a tool used to transfer words to picture</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
