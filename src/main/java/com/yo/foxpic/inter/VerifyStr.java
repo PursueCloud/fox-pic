@@ -1,4 +1,4 @@
-package com.fox.inter;
+package com.yo.foxpic.inter;
 
 /**
  * Summarize:字符串修正接口

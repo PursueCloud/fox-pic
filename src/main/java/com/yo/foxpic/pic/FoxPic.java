@@ -1,19 +1,18 @@
-package com.fox.pic;
+package com.yo.foxpic.pic;
 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.UUID;
 
 import javax.imageio.ImageIO;
 
-import com.fox.model.PicModel;
-import com.fox.res.FoxColor;
-import com.fox.util.PictureUtil;
-import com.fox.util.RandomUtil;
-import com.fox.util.StringUtil;
+import com.yo.foxpic.model.PicModel;
+import com.yo.foxpic.res.FoxColor;
+import com.yo.foxpic.util.PictureUtil;
+import com.yo.foxpic.util.RandomUtil;
+import com.yo.foxpic.util.StringUtil;
 
 /**
  * 快速生成图片
@@ -23,7 +22,7 @@ import com.fox.util.StringUtil;
 public class FoxPic {
 	
 	//默认属性
-	private static Font font = new Font("楷体", Font.BOLD, 32);
+	private static Font font = new Font("DengXian", Font.PLAIN, 32);
 	private static int width = 80;
 	private static int height = 80;
 	private static Color fontColors = FoxColor.white;
@@ -35,7 +34,7 @@ public class FoxPic {
 	 */
 	public static String create(String path){
 		BufferedImage buffer = PictureUtil.createImage(
-				String.valueOf(RandomUtil.Char.getRandomChar()), 
+				String.valueOf(RandomUtil.Char.getRandomChar()),
 				font, 
 				width, 
 				height, 
@@ -78,11 +77,11 @@ public class FoxPic {
 	 */
 	public static String create(String str,String path) {
 		BufferedImage buffer = PictureUtil.createImage(
-				str != null ? str.substring(0, 1) : String.valueOf(RandomUtil.Char.getRandomChar()), 
+				str != null ? str : String.valueOf(RandomUtil.Char.getRandomChar()),
 				font, 
 				width, 
 				height, 
-				RandomUtil.ColorFit.randomSomeColor(), 
+				FoxColor.blue,
 				fontColors);
 		String file = StringUtil.getUUID(true)+".jpg";
 		try {
@@ -105,7 +104,7 @@ public class FoxPic {
 	 */
 	public static String create(String str,Color bg,Color fontColor,String path) {
 		BufferedImage buffer = PictureUtil.createImage(
-				str != null ? str.substring(0, 1) : String.valueOf(RandomUtil.Char.getRandomChar()), 
+				str != null ? str : String.valueOf(RandomUtil.Char.getRandomChar()),
 				font, 
 				width, 
 				height, 
@@ -132,7 +131,7 @@ public class FoxPic {
 	 */
 	public static String create(String str,int width,int height,String path) {
 		BufferedImage buffer = PictureUtil.createImage(
-				str != null ? str.substring(0, 1) : String.valueOf(RandomUtil.Char.getRandomChar()), 
+				str != null ? str : String.valueOf(RandomUtil.Char.getRandomChar()),
 				font, 
 				width, 
 				height, 
@@ -238,7 +237,7 @@ public class FoxPic {
 	 * 清除设置,恢复默认属性
 	 */
 	public static void clear() {
-		font = new Font("楷体", Font.BOLD, 32);
+		font = new Font("楷体", Font.PLAIN, 32);
 		width = 80;
 		height = 80;
 		fontColors = FoxColor.white;

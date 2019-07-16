@@ -1,4 +1,4 @@
-package com.fox.model;
+package com.yo.foxpic.model;
 
 import java.awt.Color;
 import java.awt.Font;

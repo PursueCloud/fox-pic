@@ -1,8 +1,8 @@
-package com.fox.util;
+package com.yo.foxpic.util;
 
 import java.util.UUID;
 
-import com.fox.inter.VerifyStr;
+import com.yo.foxpic.inter.VerifyStr;
 
 /**
  * 字符串相关工具类

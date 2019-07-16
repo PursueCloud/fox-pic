@@ -1,6 +1,6 @@
-package com.fox.util;
+package com.yo.foxpic.util;
 
-import com.fox.res.FoxColor;
+import com.yo.foxpic.res.FoxColor;
 
 /**
  * 随机工具类

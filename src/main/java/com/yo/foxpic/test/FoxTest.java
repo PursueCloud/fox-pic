@@ -1,8 +1,8 @@
-package com.fox.test;
+package com.yo.foxpic.test;
 
 import java.awt.Font;
 
-import com.fox.pic.FoxPic;
+import com.yo.foxpic.pic.FoxPic;
 
 public class FoxTest {
 	

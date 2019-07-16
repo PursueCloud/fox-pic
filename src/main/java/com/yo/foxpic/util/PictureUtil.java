@@ -1,4 +1,4 @@
-package com.fox.util;
+package com.yo.foxpic.util;
 
 import java.awt.Color;
 import java.awt.Font;

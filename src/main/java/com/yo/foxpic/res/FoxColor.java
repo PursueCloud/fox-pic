@@ -1,4 +1,4 @@
-package com.fox.res;
+package com.yo.foxpic.res;
 
 import java.awt.Color;
 
