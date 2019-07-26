@@ -178,7 +178,7 @@ public class FoxPic {
 	 * @param format 类型
 	 * @return 图片保存全路径
 	 */
-	public static String create(PicModel model,ForMat format) {
+	public static String create(PicModel model, ImageFormat format) {
 		String matD = "JPG";
 		String mat = "jpg";
 		switch (format) {
@@ -226,7 +226,7 @@ public class FoxPic {
 	 * User:贾恒飞
 	 * Create in 2018年5月31日 from Eclipse
 	 */
-	public enum ForMat{
+	public enum ImageFormat {
 		JPG,
 		PNG,
 		BMP,
@@ -237,10 +237,10 @@ public class FoxPic {
 	 * 清除设置,恢复默认属性
 	 */
 	public static void clear() {
-		font = new Font("楷体", Font.PLAIN, 32);
-		width = 80;
-		height = 80;
-		fontColors = FoxColor.white;
+        font = new Font("DengXian", Font.PLAIN, 220);
+        width = 500;
+        height = 500;
+        fontColors = FoxColor.white;
 	}
 
 	/**
