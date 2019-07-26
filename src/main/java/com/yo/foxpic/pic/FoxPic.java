@@ -22,9 +22,9 @@ import com.yo.foxpic.util.StringUtil;
 public class FoxPic {
 	
 	//默认属性
-	private static Font font = new Font("DengXian", Font.PLAIN, 32);
-	private static int width = 80;
-	private static int height = 80;
+	private static Font font = new Font("DengXian", Font.PLAIN, 220);
+	private static int width = 500;
+	private static int height = 500;
 	private static Color fontColors = FoxColor.white;
 	
 	/**
